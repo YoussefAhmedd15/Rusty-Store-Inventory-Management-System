@@ -60,10 +60,7 @@ Rust Standard Library (beginner-friendly, minimal dependencies)
 git clone https://github.com/your-username/rusty-store-inventory.git
 cd rusty-store-inventory
 
-2. Build the project
-cargo build
-
-3. Run the project
+2. Run the project
 cargo run
 
 🧪 Testing

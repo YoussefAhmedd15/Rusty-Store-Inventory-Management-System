@@ -72,10 +72,15 @@ cargo test
 📂 Project Structure
 src/
  ├── main.rs         # Entry point with menu and navigation
+ 
  ├── inventory.rs    # Inventory management logic
+ 
  ├── sales.rs        # Sales management logic
+ 
  ├── purchases.rs    # Purchases management logic
+ 
  ├── reports.rs      # Report generation
+ 
  └── auth.rs         # Authentication & access control
 
 🎯 Learning Goals

@@ -1,100 +1,127 @@
-🦀 Rusty Store Inventory Management System
+Rusty Store Inventory Management System
+📌 Project Overview
 
-A simple Inventory Management System written in Rust for a small retail store.
-This project helps store managers manage products, track sales, record purchases, and generate reports — all from a clean text-based interface.
+The Rusty Store Inventory Management System is a simple command-line application written in Rust.
+It helps small retail stores manage their inventory, sales, and purchases in an easy and beginner-friendly way.
+
+The system is entirely text-based and provides a menu-driven interface for store managers.
 
 ✨ Features
+1. Inventory Management
 
-📦 Inventory Management
+Add new products to the inventory.
 
-Add, edit, and delete products
+Edit product details (name, description, price, quantity).
 
-Track product name, description, price, and quantity
+Delete products.
 
-💰 Sales Management
+View all available products.
 
-Record sales transactions (product, quantity, price)
+2. Sales Management
 
-Automatically calculate total sales & profit
+Record sales transactions.
 
-🛒 Purchase Management
+Update inventory automatically when items are sold.
 
-Record purchase transactions (product, quantity, cost)
+Track total sales and profit made from each transaction.
 
-Calculate total purchase cost
+Handle errors (e.g., selling more items than available).
 
-📊 Reports
+3. Purchase Management
 
-View inventory list
+Record purchase transactions.
 
-View sales history
+Update inventory when new stock is purchased.
 
-View purchase history
+Calculate the total purchase cost.
 
-🔐 Security
+4. Reporting
 
-Basic authentication for store managers
+Generate reports showing:
 
-Prevents unauthorized access
+Current inventory list.
 
-⚡ Error Handling
+Sales history.
 
-Handles invalid inputs
+Purchase history.
 
-Prevents selling out-of-stock items
+5. Error Handling
 
-🖥️ User Interface
+Prevents invalid inputs.
 
-Easy text-based menu system
+Handles out-of-stock cases.
 
-Beginner-friendly navigation
+Ensures that edits/deletes only apply to existing items.
 
-🛠️ Built With
+6. Security
 
-Rust 🦀
+Basic authentication (username + password) for store managers.
 
-Rust Standard Library (beginner-friendly, minimal dependencies)
+Prevents unauthorized access to inventory and transactions.
 
-🚀 Getting Started
-1. Clone the repository
-git clone https://github.com/your-username/rusty-store-inventory.git
-cd rusty-store-inventory
+7. User Interface
 
-2. Build the project
+Simple text-based menu.
+
+Beginner-friendly commands.
+
+🛠️ Tech Stack
+
+Language: Rust
+
+Data Structures:
+
+Vec → To store lists of products, sales, and purchases.
+
+HashMap → To map product names/IDs with their details for quick lookups.
+
+🚀 How to Run
+
+Clone this repository
+
+git clone https://github.com/your-username/rusty-store.git
+cd rusty-store
+
+
+Build the project
+
 cargo build
 
-3. Run the project
+
+Run the project
+
 cargo run
 
-🧪 Testing
+📖 Example Usage
+Welcome to Rusty Store!
+Please log in:
+Username: admin
+Password: *****
 
-Run the test suite:
+1. Manage Inventory
+2. Record Sale
+3. Record Purchase
+4. Reports
+5. Exit
+Enter your choice:
 
-cargo test
 
-📂 Project Structure
-src/
- ├── main.rs         # Entry point with menu and navigation
- ├── inventory.rs    # Inventory management logic
- ├── sales.rs        # Sales management logic
- ├── purchases.rs    # Purchases management logic
- ├── reports.rs      # Report generation
- └── auth.rs         # Authentication & access control
+Example workflow:
 
-🎯 Learning Goals
+Add product → Shampoo, Price: 50, Qty: 20
 
-This project demonstrates Rust concepts such as:
+Record sale → Shampoo, Qty: 5
 
-Ownership & Borrowing
+Inventory updates → Shampoo, Qty: 15
 
-Structs & Enums
+🧑‍💻 Future Improvements
 
-Traits & Implementations
+Save/load inventory data to a file or database.
 
-Error Handling (Result & Option)
+Add multiple user roles (e.g., cashier, manager).
 
-Iterators & Collections (Vec, HashMap)
+Support for discounts and tax calculation.
 
-📜 License
+👨‍🏫 Author
 
-This project is open source and available under the MIT License.
+Youssef Ahmed

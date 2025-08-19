@@ -17,7 +17,8 @@ How to get it running:
 
 	1.	Clone the project:
 `git clone https://github.com/your-username/rusty-store.git`
-	2.	Build and run it:
+	
+    2.	Build and run it:
 `cargo build`
 `cargo run`
 

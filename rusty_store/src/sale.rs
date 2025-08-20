@@ -1,6 +1,5 @@
 use serde::{Deserialize, Serialize};
 
-// Sale record
 #[derive(Serialize, Deserialize)]
 pub struct Sale {
     pub product_name: String,

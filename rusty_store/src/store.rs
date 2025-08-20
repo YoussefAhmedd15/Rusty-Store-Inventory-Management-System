@@ -240,7 +240,7 @@ impl Store {
             );
         }
 
-        println!("\n--- Purchase Report ---");
+        println!("\n--- Purchase Report --");
         for purchase in &self.purchases {
             println!(
                 "Product: {}, Qty: {}, Total Cost: {:.2}",

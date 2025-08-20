@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-// Product structure
+
 #[derive(Clone, Serialize, Deserialize)]
 pub struct Product {
     pub name: String,
